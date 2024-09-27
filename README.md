@@ -31,4 +31,4 @@ The Belly Button Biodiversity dataset reveals that a small handful of microbial 
 * **Dynamic Updates** : All plots update automatically when a new sample is selected from the dropdown menu.
 
 ## Dashboard
-(module14-dashboard.png)
+(../module14-dashboard.png)
