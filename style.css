@@ -1,0 +1,88 @@
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #3f3b3b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    /* Your custom styles here */
+    background-color: #8b8d91; /* Example of changing the background */
+    text-align: center; /* Ensuring text alignment */
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+   
+}
+
+.col-md-3 .card-body {
+    background-color: #f1834f !important; /* Light background */
+    padding: 20px !important;
+  }
+.card-primary {
+    background-color: #f1834f;
+}
+  
+.card-primary .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+.card-primary .card-body {
+    padding: 20px;
+}
+
+#selDataset {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+#selDataset option {
+    background-color: #f0f0f0;
+  }
+
+#sample-metadata {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+#sample-metadata h6 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+#bar {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+#bar svg {
+    width: 100%;
+    height: 100%;
+  }
+  #bubble {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+  #bubble svg {
+    width: 100%;
+    height: 100%;
+  }
+
