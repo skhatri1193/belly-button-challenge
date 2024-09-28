@@ -1,88 +1,129 @@
 
+* Fonts */
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0f0f0;
 }
 
+/* General container and row styling */
 .container {
     padding: 40px;
     margin: 40px auto;
-    background-color: #3f3b3b;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .row {
-    /* Your custom styles here */
-    background-color: #8b8d91; /* Example of changing the background */
-    text-align: center; /* Ensuring text alignment */
+    background: linear-gradient(145deg, #3f3b3b, #2c2a2a);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-
-.card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.row {
+    background-color: #444444; /* Dark grey background for sections */
     padding: 20px;
-   
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-.col-md-3 .card-body {
-    background-color: #f1834f !important; /* Light background */
-    padding: 20px !important;
-  }
+/* Card styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
 .card-primary {
     background-color: #f1834f;
-}
-  
-.card-primary .card-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-}
-  
-.card-primary .card-body {
-    padding: 20px;
+    border-radius: 15px;
 }
 
+.card-primary .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.card-header {
+    background-color: #d6723e;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Dropdown and metadata */
 #selDataset {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #f0f0f0;
-  }
-  
-#selDataset option {
-    background-color: #f0f0f0;
-  }
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#selDataset:focus {
+    background-color: #ddd;
+}
 
 #sample-metadata {
     padding: 20px;
     border-top: 1px solid #ddd;
-  }
-  
+    background-color: #f9f9f9;
+}
+
 #sample-metadata h6 {
     font-weight: bold;
     margin-top: 0;
-  }
+}
 
-#bar {
+/* Chart sections */
+#bar, #bubble {
     width: 100%;
     height: 400px;
     margin-top: 20px;
-  }
-  
-#bar svg {
-    width: 100%;
-    height: 100%;
-  }
-  #bubble {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-  }
-  
-  #bubble svg {
-    width: 100%;
-    height: 100%;
-  }
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
 
+#bar svg, #bubble svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .row {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #bar, #bubble {
+        height: 300px;
+    }
+}
+
+/* Set specific scale for Plotly toolbar */
+.modebar {
+  transform: scale(0.75); /* Adjust this to the desired size */
+}
+
+/* Ensure the toolbar isn't affected by other styles */
+.modebar-group, .modebar-btn {
+  font-size: 12px !important; /* Customize as needed */
+  padding: 2px !important;    /* Adjust padding */
+}
