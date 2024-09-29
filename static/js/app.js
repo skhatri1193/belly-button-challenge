@@ -86,7 +86,8 @@ function buildCharts(sample) {
 
     let barLayout = {
       title: 'Top 10 Bacteria Cultures Found',
-      margin: {t: 30, l: 150}
+      margin: {t: 30, l: 150},
+      xaxis: {title: 'Number of Bacteria'}
     };
 
     Plotly.newPlot('bar', barData, barLayout);
