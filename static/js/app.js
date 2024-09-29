@@ -51,10 +51,9 @@ function buildCharts(sample) {
     // Build Bubble Chart
     let bubbleLayout = {
       title: 'Bacteria Cultures Per Sample',
-      margin: {t: 0},
       hovermode: 'closest',
       xaxis: {title: 'OTU ID'},
-      margin: {t: 30}
+      yaxis: {title: 'Number of Bacteria'}
     };
 
     let bubbleData = [{
@@ -79,6 +78,7 @@ function buildCharts(sample) {
     let barData = [{
       x: topSampleValues,
       y: yticks,
+      yaxis: {title: ''}
       text: topOtuLabels,
       type: 'bar',
       orientation: 'h'
@@ -86,7 +86,6 @@ function buildCharts(sample) {
 
     let barLayout = {
       title: 'Top 10 Bacteria Cultures Found',
-      margin: {t: 30, l: 150},
       xaxis: {title: 'Number of Bacteria'}
     };
 
